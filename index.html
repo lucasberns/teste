@@ -1,9 +1,141 @@
 <!doctype html>
 <html>
   <head>
-    <title>This is the title of the webpage!</title>
+    <title>Formulário</title>
   </head>
   <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+    <h3>Informe seus dados</h3>
+    <form method="GET" action="/processamento">
+    
+    <br/>
+
+    <label for="nome">* Nome:</label>
+    <input id="nome" type="text" placeholder="Digite seu nome completo" required />
+
+   <br/>
+
+    <label for="email">* Email:</label>
+    <input id="email" type="email" placeholder="Digite seu e-mail" required />
+
+    <br/>
+
+    <label for="telefone">  Telefone:</label>
+    <input id="telefone" type="tel" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\)\s?\d{4}-\d{4}"/>
+    
+    <br/>
+    
+    <label for="celular">  Celular:</label>
+    <input id="celulcar" type="tel" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\)\s?\d{5}-\d{4}"/>
+    
+    <br/>
+    
+    <label for="nascimento">* Data de nascimento:</label>
+    <input id="nascimento" type="date"  required/>
+    
+    <br/>
+    
+    <label for="sexo">* Sexo:</label>
+    <select id="sexo">
+      <option value="sexo">Selecione seu sexo
+     </option>
+      <option value="Masculino">Masculino</option>
+      <option value="Feminino">Feminino</option>
+     </select required>
+    
+    <br/>
+
+    <label for="cep">* CEP:</label>
+    <input id="cep" type="number" placeholder="XXXXX-XXX" pattern="\d{5}-\d{3}"/>
+
+    <br/>
+
+    <label for="endereco">* Endereco:</label>
+    <input id="endereco" type="text" placeholder="Informe seu endereço" required/>
+
+    <br/>
+
+    <label for="numero">* Numero:</label>
+    <input id="numero" type="text" placeholder="Qual o numero? " required/>
+
+    <br/>
+
+    <label for="complemento">  Complemento:</label>
+    <input id="complemento" type="text" placeholder="Informe o complemento (opcional)"/>
+
+    <br/>
+    
+    <label for="bairro">* Bairro:</label>
+    <input id="bairro" type="text" placeholder="Informe o bairro" required/>
+
+    <br/>
+    
+    <label for="cidade">* Cidade:</label>
+    <input id="cidade" type="text" placeholder="Informe a cidade" required/>
+
+    <br/>
+    
+    <label for="estado">* Estado:</label>
+    <select id="estado">
+      <option value="estado">Selecione seu estado
+     </option>
+      <option value="ac">AC</option>
+      <option value="al">AL</option>
+      <option value="ap">AP</option>
+      <option value="am">AM</option>
+      <option value="ba">BA</option>
+      <option value="ce">CE</option>
+      <option value="df">DF</option>
+      <option value="es">ES</option>
+      <option value="go">GO</option>
+      <option value="ma">MA</option>
+      <option value="mt">MT</option>
+      <option value="ms">MS</option>
+      <option value="mg">MG</option>
+      <option value="pa">PA</option>
+      <option value="pb">PB</option>
+      <option value="pr">PR</option>
+      <option value="pe">PE</option>
+      <option value="pi">PI</option>
+      <option value="rj">RJ</option>
+      <option value="rn">RN</option>
+      <option value="rs">RS</option>
+      <option value="ro">RO</option>
+      <option value="rr">RR</option>
+      <option value="sc">SC</option>
+      <option value="sp">SP</option>
+      <option value="se">SE</option>
+      <option value="to">TO</option>
+     </select required>
+    
+    <br/>
+
+    <label for="assunto">* Qual o assunto:</label>
+    <input id="assunto" type="text" placeholder="Informe o assunto" required/>
+
+    <br/>
+    
+    <label for="mensagem">* Qual a mensagem:</label>
+    <input id="mensagem" type="textarea" cols="20" rows="20" placeholder="Informe a mensagem" required/>
+
+    <br/>
+    
+    <label for="cor"> Qual sua cor favorita?</label><br>
+    <input id="cor" type="radio" value="azul"/>
+    <label for="azul">Azul</label><br>
+    <input id="cor" type="radio" value="verde"/>
+    <label for="verde">Verde</label><br>
+    <input id="vermelho" type="radio" value="vermelho"/>
+    <label for="vermelho">Vermelho</label><br>
+
+    <br/>
+    
+    <label for="hobbie">  Qual seus hobbies:</label>
+    <input id="hobbie" type="checkbox" />
+
+    <br/>
+    
+    <button>Enviar</button>
+    
+    </form>
   </body>
 </html>
